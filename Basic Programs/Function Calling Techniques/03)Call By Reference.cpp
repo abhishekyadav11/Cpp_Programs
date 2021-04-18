@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include<conio.h>
 
 //Compiler version g++ 6.3.0
 
