@@ -46,4 +46,7 @@ int main()
     mObj.Fam(50,20);
     
     cout<<"\nBack To main()"<<endl;
+    
+    getch();
+    return 0;
 }
