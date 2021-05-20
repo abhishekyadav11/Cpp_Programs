@@ -16,7 +16,7 @@ class Stud
        cout<<"\nInside Default Constructor"<<endl;
      }
      
-    void Fun(int x)
+    void Fun(int x)     // Non Constant Behaviour
     {
       int y=11;
       cout<<"\n********************************************************\n";
@@ -36,7 +36,7 @@ class Stud
       cout<<"\n*******************************************************\n";
     }
     
-    void Gun(int x) const
+    void Gun(int x) const      // Constant Behaviour
     {
        int y=23;
        
@@ -47,8 +47,8 @@ class Stud
        y++;
   /* 
        i++;      
-       j++;     
-  // error Because Gun() Function is Constant And Constant Behaviour Can't Modify Any Another Content 
+       j++;           
+   Error Because Gun() Function is Constant And Constant Behaviour Can't Modify Any Another Content 
   
   */    
        cout<<"\nAfter Incrementing : "<<endl;
