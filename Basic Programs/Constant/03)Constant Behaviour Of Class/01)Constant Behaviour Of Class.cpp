@@ -71,4 +71,7 @@ int main()
     sObj.Fun(50);
     sObj.Gun(10);
     cout<<"\nBack To main()...!"<<endl;
+    
+    getch();
+    return 0;
 }
