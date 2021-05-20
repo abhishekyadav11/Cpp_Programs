@@ -15,21 +15,28 @@ class A
        cout<<"\nInside Default Constructor"<<endl;
      }
      
-     void Fun(int x)
+     void Fun(int x)     // Non Constant Behaviour
      {
        int y=10;
        i=60;
        j=200;
-       cout<<"\nValues : x = "<<x<<" y = "<<y<<" i = "<<i<<" j = "<<j<<endl;
        
+       cout<<"\nInside Non-Constant Member Function Fun()"<<endl;
+       
+       cout<<"\nValues : x = "<<x<<" y = "<<y<<" i = "<<i<<" j = "<<j<<endl;
+     
+       cout<<"\n*******************************************************\n";  
      }
      
-    void Gun(int m) const
+    void Gun(int m) const     // Constant Behaviour
     {
       int n=50;
+      
+      cout<<"\nInside Constant Member Function Gun()"<<endl;
        
       cout<<"\nValues : m = "<<m<<" n = "<<n<<" i = "<<i<<" j = "<<j<<endl;
-            
+       
+      cout<<"\n*******************************************************\n";       
     }
     
    ~A()
@@ -50,17 +57,21 @@ int main()
     Obj1.Gun(400);
 
     cout<<"\nValues : i = "<<Obj1.i<<" j = "<<Obj1.j<<endl;
-    
-    const A Obj2;
+   
+    cout<<"\n*******************************************************\n";
+     
+    const A Obj2;      // Creating Constant Object
   
   /*  
     Obj2.i++;
     Obj2.j++;
+    Obj2.Fun(500);
     
     Not Allowed Because Obj2 Is Constant Object & i,j Are Non Constant Characteristics.
     
     Constant Object Can Only Access Constant Behaviours
   */
+      
     
     Obj2.Gun(20);     // Allowed Because Gun() Function Is Constant And Also Object Is Constant So Constant Object Can Call Any Constant Behaviour Of Our Class    
       
