@@ -1,4 +1,5 @@
-#include <iostream>
+#include<conio.h>
+#include<iostream>
 using namespace std;
 
 //Compiler version g++ 6.3.0
@@ -12,5 +13,6 @@ int main()
     
     cout<<"\nNumber = "<<No<<endl;  // cout is used to print/display data on screen
     
-   return 0;
+  getch();
+  return 0;
 }
