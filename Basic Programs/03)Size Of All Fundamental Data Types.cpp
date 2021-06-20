@@ -1,4 +1,5 @@
-#include <iostream>
+#include<conio.h>
+#include<iostream>
 using namespace std;
 
 //Compiler version g++ 6.3.0
@@ -20,5 +21,7 @@ int main()
     cout<<"09) bool        = "<<sizeof(bool)<<endl;
   
     cout<<"\n**********************************************\n";
+  
+   getch();
    return 0;
 }
