@@ -78,6 +78,7 @@ int main()
    Derived dObj;
    
   Base *bPtr=&dObj;         // Upcasting : Base Class Pointer Points To Derived Class Object
+  //Derived *dptr = &bobj;          Downcasting : Derived pointer points address of Base.
   
   getch();
   return 0;
